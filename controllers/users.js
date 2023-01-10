@@ -34,4 +34,9 @@ export const updateUser = (req, res) => {
     if (age) user.age = age;
 
     res.send(`User id:${id} updated successfully`)
+    
+    //OR
+//     const index=users.findIndex((user)=>user.id===id)
+//     const updatedUser={id,firstName,lastName,age}
+//     users[index]=updatedUser
 }
